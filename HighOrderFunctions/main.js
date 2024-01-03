@@ -71,11 +71,12 @@ const filtrarAbvPorNum = (array,num )=>{
     const cervezaFiltrada = array.filter(cerveza => cerveza.abv <= num)
     console.log(cervezaFiltrada)
 
-    const mostrarCervezas = cervezaFiltrada.map(cerveza => {        //terminar
-        cerveza.name,
-        cerveza.ibu,
-        cerveza.abv
-    })
+    const mostrarCervezas = cervezaFiltrada.map(cerveza => ({       //terminar
+        name: cerveza.name,
+        ibu: cerveza.ibu,
+        abv: cerveza.abv
+    }))
+    
     return console.log(mostrarCervezas)
 }
 
